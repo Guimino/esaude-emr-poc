@@ -108,12 +108,12 @@
         return;
       }
 
-      if(vm.prescriptionItem.drugOrder.dose === 0){
+      if(vm.prescriptionItem.drugOrder.dose < 1){
         notifier.error($filter('translate')('COMMON_MESSAGE_ERROR_DOSAGE_CANNOT_BE_ZERO'));
         return;
       }
 
-      if(vm.prescriptionItem.drugOrder.duration === 0){
+      if(vm.prescriptionItem.drugOrder.duration < 1){
         notifier.error($filter('translate')('COMMON_MESSAGE_ERROR_DURATION_CANNOT_BE_ZERO'));
         return;
       }

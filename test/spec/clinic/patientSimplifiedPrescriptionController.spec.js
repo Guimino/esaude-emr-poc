@@ -239,7 +239,7 @@ describe('PatientSimplifiedPrescriptionController', function () {
       }
     };
 
-    describe('Not Allow adding a Drug with form validation errors ', function () {
+    describe('form has validation errors ', function () {
       beforeEach(function () {
 
         controller = $controller('PatientSimplifiedPrescriptionController', {
@@ -261,7 +261,7 @@ describe('PatientSimplifiedPrescriptionController', function () {
         });
     });
 
-    describe('Not Allow adding a Drug with invalid dose', function () {
+    describe('drug has invalid dose', function () {
       beforeEach(function () {
 
         controller = $controller('PatientSimplifiedPrescriptionController', {
@@ -276,7 +276,7 @@ describe('PatientSimplifiedPrescriptionController', function () {
        });
     });
 
-    describe(' Not Allow adding a Drug with invalid duration', function () {
+    describe('drug has invalid duration', function () {
       beforeEach(function () {
 
         controller = $controller('PatientSimplifiedPrescriptionController', {
